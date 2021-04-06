@@ -17,6 +17,7 @@ body {
 header {
   color: #9d9f9f;
   border-bottom: 2px solid #9d9f9f;
+  margin-bottom: 80px;
 }
 
 header > nav > span:nth-of-type(1) {
@@ -58,8 +59,85 @@ section {
 
 section > aside {
   display: inline-block;
+  position: relative;
+  width: 18%;
+  margin: 0 25px;
+  height: 700px;
 }
 
 section > aside:nth-of-type(1) {
-  width: 25%;
+  width: 30%;
+}
+section > aside:nth-of-type(1) > h2 {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-size: 4em;
+}
+
+section > aside:nth-of-type(1) > h3 {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+  font-size: 2em;
+  color: #ac8059;
+}
+
+h3::before {
+  content: "";
+  background-color: #ac8059;
+  width: 20px;
+  vertical-align: middle;
+  height: 3px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+section > aside:not(section > aside:nth-of-type(1)) > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+section > aside:not(section > aside:nth-of-type(1)) > span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+footer {
+  margin-top: 20px;
+}
+footer > ul {
+  list-style-type: none;
+  display: inline-block;
+  width: 50%;
+}
+
+footer > ul > li {
+  color: #9d9f9f;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+
+footer > ul > li:hover {
+  cursor: pointer;
+}
+
+footer > span {
+  border: 2px solid #9d9f9f;
+  padding: 10px;
+  color: white;
+  border-radius: 100%;
+  font-size: 2em;
+  display: inline-block;
+}
+footer > span:nth-of-type(1) {
+  margin-left: 40%;
+  margin-right: 20px;
+}
+
+footer > span:hover {
+  cursor: pointer;
+  color: #ac8059;
 }
